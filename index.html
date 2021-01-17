@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ontario Tech University | Programs</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dcf64f7d02.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="imageandbutton">
+        <img src="./images/students.jpg">
+        <a href="#mainsection">Programs</a>
+    </div>
+    <div class="main" id="mainsection">
+        <h1 class="breaklogo"><span id="ontario">Ontario</span><span id="tech">Tech<br /></span><span
+                id="university">university</span>
+        </h1>
+        <h2 id="title"></h2>
+        <p id="description"></p>
+        <h2>Find your program</h2>
+        <div id="findprogram">
+            <div>
+                <select name="types" id="types" onchange="selectProgramType()">
+                    <option value="" selected disabled hidden>Choose program type</option>
+                </select>
+            </div>
+            <div>
+                <select name="faculties" id="faculties" onchange="selectProgramFaculty()">
+                    <option value="" selected disabled hidden>Choose Faculty</option>
+                </select>
+            </div>
+            <div>
+                <select name="programTitles" id="programTitles" onchange="selectProgramTitle()">
+                    <option value="" selected disabled hidden>Choose program</option>
+                </select><br />
+            </div>
+        </div>
+        <div id="programfindbtn"><button type="button" id="findButton" disabled onclick="programFinder()">Find
+                Program</button></div>
+        <div class="container" id="container">
+            <div class="left">
+                <h2>Search</h2>
+                <input type="text" class="searchProgram inputtagvalue" id="searchProgram" placeholder="search here"
+                    onkeyup="searchProgram()"> <button onclick="clearvalues()" id="clearsearch">Clear</button>
+                <div class="suggestions"></div>
+                </input>
+            </div>
+            <div class="right">
+                <h2>All Programs</h2>
+                <div id="allPrograms"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

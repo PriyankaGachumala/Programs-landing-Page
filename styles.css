@@ -1,0 +1,237 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#ontario {
+  color: #003c71;
+}
+
+#tech {
+  color: #e75d2a;
+  margin-bottom: -10px;
+}
+.breaklogo {
+  padding-top: 5px;
+  line-height: 0.6;
+}
+
+#university {
+  padding: 0;
+  color: #003c71;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: large;
+}
+
+#findprogram {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#clearsearch {
+  text-align: center;
+  background-color: #003c71;
+  color: white;
+  padding: 10px;
+}
+
+select {
+  height: 30px;
+}
+
+h2 {
+  color: #003c71;
+}
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 20px;
+}
+
+#findprogram {
+  text-align: center;
+}
+
+#programfindbtn {
+  text-align: center;
+}
+
+#programfindbtn > button {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #003c71;
+  color: white;
+  width: 180px;
+  border-radius: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.accordion-single {
+  width: 80%;
+}
+
+button {
+  background-color: #f5f5f5;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  border: 7px solid white;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.toggle-switch {
+  font-weight: bolder;
+  font-size: medium;
+  float: right;
+}
+
+#content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.active,
+.collapse:hover {
+  background-color: #f5f5f5;
+}
+/* 
+.autocomplete {
+  position: relative;
+  display: inline-block;
+} */
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type='text'] {
+  background-color: #f1f1f1;
+}
+
+input[type='submit'] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.accordion-single {
+  margin-bottom: 5px;
+}
+
+.accordion {
+  float: left;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin-left: 10px;
+  width: 100%;
+  border: none;
+  margin-bottom: 3px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 2s;
+}
+
+#findprogram > div > select {
+  width: 70%;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.suggestions > span > div {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.suggestions > div:hover {
+  background-color: #999;
+}
+
+#imageandbutton {
+  position: relative;
+}
+
+#imageandbutton > img {
+  height: 100vh;
+  width: 100vw;
+  opacity: 2;
+}
+
+#imageandbutton > a {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  #imageandbutton {
+    display: none;
+  }
+
+  #findprogram {
+    display: block;
+  }
+
+  #findprogram > div {
+    padding-bottom: 10px;
+  }
+
+  #findprogram > div > select {
+    width: 75%;
+  }
+
+  .container {
+    display: block;
+    padding: 0;
+  }
+
+  .accordion {
+    float: none;
+    width: 80vw;
+  }
+}
+
+#findButton:disabled {
+  opacity: 0.4;
+}
